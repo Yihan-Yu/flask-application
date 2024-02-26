@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home page</title>
+    </head>
+    <body>
+    {% if name|length == 0 %}
+    <h2> An error occurred. Please enter a name. </h2>
+    {% else %}
+    <h2> Thanks for your message, {{name}}. We will get back to you shortly at {{ email }}.</h2>
+    {% endif %}
+    </body>
+</html>
